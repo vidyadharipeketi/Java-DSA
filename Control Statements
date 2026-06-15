@@ -1,0 +1,113 @@
+Control Statements
+Control statements are used to control the flow of execution of a Java program. They determine which statements are executed and in what order.
+
+Java control statements are mainly divided into three categories:
+1. Decision-Making Statements
+These statements allow the program to make decisions based on conditions.
+a) if Statement:
+Executes a block of code if the condition is true.
+example:
+int age = 18;
+if(age >= 18) {
+    System.out.println("Eligible to vote");
+}
+
+b)if-else Statement
+Executes one block if the condition is true and another if it is false.
+example:
+int num = 10;
+if(num % 2 == 0) {
+    System.out.println("Even Number");
+} else {
+    System.out.println("Odd Number");
+}
+else-if Ladder
+c) else-if Ladder
+Used when multiple conditions need to be checked.
+example:
+int marks = 75;
+if(marks >= 90) {
+    System.out.println("Grade A");
+} else if(marks >= 70) {
+    System.out.println("Grade B");
+} else {
+    System.out.println("Grade C");
+}
+d) switch Statement
+Used to select one block from multiple options.
+example:
+int day = 3;
+switch(day) {
+    case 1:
+        System.out.println("Monday");
+        break;
+    case 2:
+        System.out.println("Tuesday");
+        break;
+    case 3:
+        System.out.println("Wednesday");
+        break;
+    default:
+        System.out.println("Invalid Day");
+}
+
+2) looping Statements
+These statements repeatedly execute a block of code.
+a) for Loop
+Used when the number of iterations is known.
+example:
+for(int i = 1; i <= 5; i++) {
+    System.out.println(i);
+}
+b)while Loop
+Executes as long as the condition remains true.
+example:
+int i = 1;
+
+while(i <= 5) {
+    System.out.println(i);
+    i++;
+}.
+c)do-while Loop
+Executes the loop body at least once.
+example:
+int i = 1;
+
+do {
+    System.out.println(i);
+    i++;
+} while(i <= 5);
+d)Enhanced for Loop (For-Each)
+Used to traverse arrays or collections.
+example:
+int[] numbers = {10, 20, 30};
+
+for(int num : numbers) {
+    System.out.println(num);
+}
+3)Jump Statements
+These statements transfer control from one part of the program to another.
+a) break
+Terminates a loop or switch statement.
+example:
+for(int i = 1; i <= 10; i++) {
+    if(i == 5) {
+        break;
+    }
+    System.out.println(i);
+}
+b)continue
+Skips the current iteration and moves to the next iteration.
+example:
+for(int i = 1; i <= 5; i++) {
+    if(i == 3) {
+        continue;
+    }
+    System.out.println(i);
+}
+c) return
+Exits from a method and optionally returns a value.
+example:
+public static int add(int a, int b) {
+    return a + b;
+}
