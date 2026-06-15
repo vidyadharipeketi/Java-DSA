@@ -7,13 +7,12 @@ Home work
 * oops
 * multithreading
 * array
-DSA:
-Array
-LinkedList
-stack
-queue
-trees
-graph
-sorting techniques
-searching techniques
-Algorithm
+DSA-Array,
+LinkedList,
+stack,
+queue,
+trees,
+graph,
+sorting techniques,
+searching techniques,
+Algorithm,
