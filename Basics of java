@@ -1,0 +1,18 @@
+Java is a object-oriented programming language  this is designed to develop all kinds of applications.
+It follows imperative  paradigm.
+Java was invented by james gosling in 1991.
+But the version java is oficially released in 1996 by sun microsystems.
+It is being maintained by oracle cooperation
+first it is given name as oak.java is given names in basis of cofee bean
+There is no full form for java
+there is a tagline for java: WORA(write once Run Anywhere)
+Advantages:
+.simple
+.object-oriented
+.platform independent
+.Distributed-can access applications from different servers.
+.secure
+.Robust
+Disadvantages:
+*when application is developed by using pure java the ui of that application is not good to see.
+
