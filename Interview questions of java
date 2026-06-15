@@ -1,0 +1,142 @@
+1. What is the super keyword? 
+Answer 
+The super keyword is used to refer to the parent class or superclass. It can be used to 
+call methods and constructors from the superclass. 
+2. What is the diAerence between local and instance variables in Java? 
+Answer 
+Instance variables are accessible by all the methods in the class. They are declared 
+outside the methods and inside the class. These variables describe the properties of an 
+object and remain bound to it. Local variables are those variables present within a 
+block, function, or constructor and can be accessed only inside them. The utilisation of 
+the variable is restricted to the block scope. 
+3. Why are strings immutable in Java? 
+Answer 
+This storage area in the Java heap is specifically used to store String literals, with the 
+aim of reducing the creation of temporary String objects through sharing. For sharing to 
+be possible, an immutable class is required. Also no external synchronisation of threads 
+is required if the String objects are immutable. In Hash Tables and HashMaps, keys are 
+String objects and should thus be immutable to avoid modification. 
+4. What are the diAerences between constructor and method of a class in Java? 
+Answer 
+Constructor is used for initialising the object state whereas method is used for exposing 
+the object's behaviour. Constructors have no return type but Methods should have a 
+return type. Even if it does not return anything, the return type is void. If the constructor 
+is not defined, then a default constructor is provided by the java compiler. The 
+constructor name should be equal to the class name. A constructor cannot be marked 
+as final because whenever a class is inherited, the constructors are not inherited. A 
+method can be defined as final but it cannot be overridden in its subclasses. 
+5. What is the diAerence between the JDK, JRE, and JVM? 
+Answer 
+The JDK (Java Development Kit) is a software development environment for developing 
+Java applications. The JRE (Java Runtime Environment) is a set of software tools used to 
+provide the runtime environment for Java applications. The JVM (Java Virtual Machine) is 
+an abstract machine that provides a runtime environment for executing Java bytecode. 
+The JDK includes the JRE, and the JRE includes the JVM. 
+6. What is constructor overloading in Java? 
+Answer 
+Constructor overloading is a concept in object oriented programming where a class can 
+have multiple constructors with diAerent parameter lists. Each constructor provides a 
+diAerent way to initialise objects of that class. 
+7. How does Java achieve platform independence? 
+Answer 
+Java achieves platform independence through the use of the Java Virtual Machine (JVM). 
+Java code is compiled into bytecode, which is then interpreted by the JVM specific to 
+the underlying platform. This "write once, run anywhere" approach allows Java 
+programs to run on any system with a compatible JVM. 
+8. What is the diAerence between method overloading and method overriding? 
+Answer 
+Method overloading is creating multiple methods in a class with the same name but 
+diAerent parameters, while method overriding is creating a method in a subclass with 
+the same name and parameters as a method in its superclass. 
+9. What is the diAerence between ArrayList and LinkedList? 
+Answer 
+ArrayList is a dynamic array that can grow or shrink as needed, while LinkedList is a 
+doubly linked list that allows fast insertion and deletion of elements. 
+10. What is the diAerence between static methods, static variables, and static classes 
+in Java? 
+Answer 
+Static Methods and Static variables are those methods and variables that belong to the 
+class of the java program, not to the object of the class. They are allocated memory 
+when the class is loaded and can directly be called with the help of the class names. A 
+class in the java program cannot be static except if it is the inner class. If it is an inner 
+static class, then it exactly works like other static members of the class 
+11. What is the diAerence between an Iterator and a ListIterator? 
+Answer 
+Iterator is used to traverse a collection in a forward direction, while ListIterator is used 
+to traverse a list in both forward and backward directions. 
+12. What is the Collections framework? 
+Answer 
+The Collections framework is a set of interfaces and classes that provide common data 
+structures such as lists, sets, and maps. 
+13. What is the diAerence between final, finally, and finalize? 
+Answer 
+Final is used to make a variable or method constant and cannot be changed later. 
+Finally is used in try-catch blocks to execute a block of code regardless of whether an 
+exception is thrown or not. Finalize is a method that is called by the garbage collector 
+when an object is no longer in use. 
+14. What are the Object Oriented Features supported by Java? 
+Answer 
+The main feature of the OOPs, also known as 4 pillars or basic principles of OOPs are as 
+follows: • Encapsulation • Inheritance • Polymorphism • Abstraction 
+15. What is the diAerence between stack and heap memory? 
+Answer 
+Stack memory is used for storing local variables and function call, while heap memory 
+is used for storing objects and their instance variables. 
+16. What is the diAerence between a HashSet and a TreeSet? 
+Answer 
+HashSet is a set that stores unique elements in an unordered manner, while TreeSet is a 
+set that stores unique elements in a sorted manner 
+17. What is garbage collection? 
+Answer 
+Garbage collection in Java is the automated process of deleting code that's no longer 
+needed or used. This automatically frees up memory space and ideally makes coding 
+Java apps easier for developers. 
+18. What is the diAerence between a HashMap and a TreeMap? 
+Answer 
+HashMap is a hash table that stores key-value pairs, while TreeMap is a red-black tree 
+that stores key-value pairs in sorted order. 
+19. What are the diAerent access specifiers used in Java? 
+Answer 
+Java has 4 access specifiers. • Public - Can be accessed by any class or method • 
+Protected - Can be accessed by the class of the same package, or by the sub-class of 
+this class, or within the same class • Default - Are accessible only within the package, is 
+the default option for all classes, methods and variables. • Private - Can be accessed 
+only within the class 
+20. What is the diAerence between an abstract class and an interface? 
+Answer 
+An abstract class is a class that cannot be instantiated and can only be inherited. An 
+interface is a blueprint of a class that contains only abstract methods and constants. 
+21. What is Java Persistence API (JPA)? 
+Answer 
+Java Persistence API is a collection of classes and methods to persist or store a vast 
+amount of data in a database using ORM. JPA Persistence framework needs to follow: 
+1. Spring Data JPA: It reduces the amount of boilerplate code needed for common 
+database operations like GET, PUT, POST, etc. 
+2. Spring Repository: It is an extension of Spring Repository which contains APIs for 
+basic CRUD operations, pagination, and Sorting. 
+22. What is context switching in Java? 
+Answer 
+Context switching in Java is the process of switching from one thread to another by the 
+operating system's scheduler. During context switching, the current thread's context, 
+including its register values and program counter, are saved, and the next thread's 
+context is restored. 
+23. What is the use of try-catch block in Java? 
+Answer 
+The try-catch block is used to handle exceptions in Java. 
+24. What is an exception? 
+Answer 
+An exception is an event that occurs during the execution of a program that disrupts the 
+normal flow of instructions 
+25. What is the diAerence between checked and unchecked exceptions? 
+Answer 
+Checked exceptions are checked at compile time, while unchecked exceptions are 
+checked at runtime. 
+26. What is the diAerence between throw and throws? 
+Answer 
+Throw is used to explicitly throw an exception, while throws is used to declare a method 
+that can potentially throw an exception. 
+27. What is a thread and what are the diAerent stages in its lifecycle?(Multithreading) 
+Answer 
+A thread is a lightweight process that can run concurrently with other threads in a 
+program. Java thread life cycle has 5 stages: New, Runnable, Running, Non
+Runnable(Blocked/ Waiting), Terminated.
