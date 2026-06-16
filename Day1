@@ -15,3 +15,87 @@ public class AddOne {
         
     }
 }
+
+Second program
+package day1;
+
+public class DecimalToBinary {
+
+    public static String decimalToBinary(int n) {
+        if ( n == 0) {
+            return "0";
+        }
+ 
+        StringBuilder binary = new StringBuilder();
+
+        while (n > 0) {
+            int remainder = n % 2;
+            binary.append(remainder);
+            n = n / 2;
+        }
+
+        return binary.reverse().toString();
+    }
+    
+    public static String decimalToBinaryBitManipulation(int n){
+        if (n == 0) {
+            return "0";
+        }
+        StringBuilder binary = new StringBuilder();
+        while (n > 0) {
+            int last_bit = n & 1;
+            binary.append(last_bit);
+            n = n >> 1;
+        }
+
+        return binary.reverse().toString();
+    }
+    
+    public static void main(String[] args) {
+        int n = 500000000;
+        System.out.println(decimalToBinaryBitManipulation(n));
+    }
+}
+
+Third program
+package day1;
+
+public class OppositeSigns {
+
+    public static boolean oppositeSigns(int num1, int num2) {
+        return (num1 ^ num2) < 0;
+    }
+    public static void main(String[] args) {
+        int num1 = 5;
+        int num2 = 78; 
+        System.err.println(oppositeSigns(num1, num2));
+    }
+}
+
+Fourth program
+
+package day1;
+public class PrintNumbers {
+    public static void main(String[] args) {
+        long n = 9000000000;
+        for (int i = 0; i <= n; i++) {
+            System.out.println(i);
+        }
+    }
+}
+Fifth program
+package day1;
+
+public class SwapNumbers {
+
+    public static void swapNumbers(int num1, int num2) {
+        num1 = num1 ^ num2;
+        num2 = num1 ^ num2;
+        num1 = num1 ^ num2; // num1 ^ num2 ^ num1
+        System.out.println("num1: " + num1);
+        System.out.println("num2: " + num2);
+    }
+    public static void main(String[] args) {
+        swapNumbers(10, 20);
+    }
+}
